@@ -1,8 +1,8 @@
 "use client"
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from "react";
 import ReactPlayer from 'react-player'
 import "./page.css"
-export default function live(){
+export default function Live(){
     const [hasWindow, setHasWindow] = useState(false);
   useEffect(() => {
     if (typeof window !== "undefined") {
