@@ -62,7 +62,7 @@ export default function Event() {
 
   const register = (name: string) => {
 
-    router.push(`/${name}/register`);
+    router.push(`/vote`);
   };
   const submit = (name: string) => {
     console.log("submit")
@@ -93,12 +93,12 @@ export default function Event() {
               height={150}
             />
             <div className={`cardOverlay ${isCardOpenfirst ? "open" : ""}`}>
-              {/* <button
+              <button
                 onClick={() => register("game_showcasing")}
                 className="registerButton button-19"
               >
-                Register
-              </button> */}
+                Vote
+              </button>
               <button   onClick={() => submit("game_showcasing")} className="submitButton button-19">Submit</button>
             </div>
           </div>

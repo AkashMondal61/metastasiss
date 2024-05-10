@@ -11,6 +11,9 @@
     font-family: jost, sans-serif;
     background-color: rgba(21, 20, 20, 0.5);
 }
+#live{
+    color: burlywood;
+}
 .heade .logo{
     /* flex: 1; */
     color:#fff;
@@ -36,6 +39,22 @@
 .heade ul li a{
     text-decoration: none;
     color:#fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 10px 15px;
+}
+@keyframes blink {
+    0% { color: rgb(236, 31, 13); }
+    50% { color: rgb(153, 153, 95); }
+    100% { color: rgb(234, 90, 17); }
+}
+
+.rest a#live {
+    animation: blink 1s infinite;
+}
+.heade ul li a #live{
+    text-decoration: none;
+    color:#a4bc4b;
     font-weight: 600;
     text-transform: uppercase;
     padding: 10px 15px;
